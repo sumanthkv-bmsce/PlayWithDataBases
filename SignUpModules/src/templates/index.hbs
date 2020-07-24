@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/index.css">
+
+    </head>
+
+    <body>
+        <div id="container">
+        <h1>Sign up</h1>
+        <h1 id="text">{{val}}</h1>
+        <form action="/signup" method="POST">
+            <p>Enter Name: </p><input id="inp" type="text" name="name" placeholder="Enter name" required> <br>
+            <p>Enter email: </p><input  id="inp" type="email" name="email" placeholder="Enter email" required><br>
+            <p>Enter password: </p><input  id="inp" type="password" name="password" placeholder="Enter password" required><br>
+            <p>Enter DOB: </p><input  id="inp" type="date" name="dob" placeholder="Enter DOB" required><br>
+            <p>Select Gender: </p>
+            <select name="gender"  id="inp" required>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="neglect">Prefer not to say</option>
+            </select><br>
+            <input  id="inp1" type="submit" value="submit">
+             
+
+        </form>
+        
+        <h2>Already have an account? Sign in</h2>
+        <form action="/login" method="POST">
+           <input id="inp1" type="submit" value="login">
+        </form>
+        </div>
+    <script src="/js/index.js"></script>
+    </body>
+</html>

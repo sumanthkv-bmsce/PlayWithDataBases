@@ -1,0 +1,21 @@
+body {
+    background-color: burlywood;
+}
+
+#container {
+    text-align: center;
+    padding: 15px;
+    background-color: aqua;
+    width: 250px;
+    position: relative;
+    left: 450px;
+}
+
+#inp {
+    padding: 10px;
+}
+
+#inp1 {
+    padding: 10px;
+    margin: 15px;
+}

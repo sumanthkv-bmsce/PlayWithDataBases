@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+    
+    <body>
+        <div class="reg">
+        <form action="/register" method="POST" onsubmit="check()">
+            <input id="email" type="text" name="email" placeholder="Enter email" onfocus="this.value=''" required><br>
+            <input id= "name" type="text" name="name" placeholder="Enter name" onfocus="this.value=''" required><br>
+            <input id = "subject" type="text" name="subject" placeholder="Enter subject" onfocus="this.value=''" required><br>
+            <input id="message" type="text" name="message" placeholder="Enter message" onfocus="this.value=''" required><br>
+            <input id="query" type="text" name="query" placeholder="Enter query" onfocus="this.value=''" required><br>
+            <button>Register</button>
+            <input type="reset" value="Reset">
+        </form>
+        </div>
+        <script src="/js/index.js"></script>
+    </body>
+</html>

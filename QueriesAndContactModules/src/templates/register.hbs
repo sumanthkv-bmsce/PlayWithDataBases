@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Register
+        </title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+        <link rel="stylesheet" href="/css/register.css">
+        </head>
+    <body>
+        <div class="center">
+        <h1><marquee>Yours Review</marquee></h1>
+        <table id="tableData">
+            <tr>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Message</th>
+                <th>Query</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td>{{email}}</td>
+                <td>{{name}}</td>
+                <td>{{message}}</td>
+                <td>{{query}}</td>
+                <td>{{subject}}</td>
+            </tr>
+        </table>
+
+
+        <form action="/allreviews" method="GET">
+            <button id="btnview">View all reviews</button>
+        </form>
+        </div>
+    <script src="/js/register.js"></script>
+    </body>
+</html>
